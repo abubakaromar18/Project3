@@ -1,7 +1,7 @@
 all: server client
 
-server: ServerC.c Shared.h
-	cc -o server ServerG.c
+server:
+	cc -o server TCPserver.c
 
-client: Client.c Shared.h
-	cc -o client Client.c
+client:
+	cc -o client TCPclient.c
